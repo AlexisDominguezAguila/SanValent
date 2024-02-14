@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Pacifico', cursive;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+ 
+
+ 
+.container-content{
+ 
+    position: relative;
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    
+}
+.contenedor-inicio{
+    display: flex;
+    width: 100%;
+    height: 590px;
+ 
+    align-items: flex-end;
+ 
+ 
+}
+ 
+ 
+#img-inicio{
+    width: 98%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+ #history-text{
+    color: #ffffff;
+    text-align: center;
+    display: block;
+ }
+ #history-text h1{
+    
+    font-size: 4rem;
+    margin-bottom: 30px;
+
+ }
+#history-text p{
+    margin-top: 10px;
+    text-align: justify;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+  
+}
+#details{
+    display: block;
+    text-align: center;
+    height: auto;
+ 
+}
+#details h2{
+color: #ffffff;
+}
+ 
+#love{
+
+    height: auto;
+    width: 100%;
+}
+#carrusel{
+    overflow: hidden;
+}
+.carrusel-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.carrusel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.diapositiva {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+}
+
+.diapositiva img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+}
+#slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;  
+    margin: auto;
+    height: auto;  
+}
+
+#slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;  
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;  
+}
+
+.slide img {
+    width: 100%;
+    height:auto;
+    border-radius: 15px;
+    object-fit: cover;  
+}
+
+#slider-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.slider-btn {
+    background: transparent;
+    color: rgb(243, 239, 239);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+ 
+ 
+
+#texto1 {
+    margin-top: 50px;
+    color: #ffffff;
+    font-size: 7rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contenedor-cartas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    gap: 20px;  
+    padding: 10px;
+}
+
+.card {
+    height: 254px;
+    background: rgb(219, 97, 243);
+    transition: all 0.4s;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.158);
+    font-size: 30px;
+    font-weight: 900;
+}
+
+  
+  .card:hover {
+    border-radius: 15px;
+    cursor: pointer;
+ 
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.466);
+    background: rgb(241, 159, 210);
+  }
+  
+  .first-content {
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s;
+    display: flex;
+ justify-content: center;
+ align-items: center;
+    opacity: 1;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .card:hover .first-content {
+    height: 0px;
+    opacity: 0;
+  }
+  
+  .second-content {
+    overflow: hidden;
+    height: 0%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+  padding: 10px;
+    border-radius: 15px;
+    transition: all 0.4s;
+ 
+ font-size: 2rem;
+    transform: rotate(90deg) scale(-1);
+  }
+  .second-content p{
+    text-align:justify ;
+    font-size: 0.85rem;
+  }
+  .card:hover .second-content {
+    opacity: 1;
+    height: 100%;
+    font-size: 1rem;
+    transform: rotate(0deg);
+  }
+  
+.contedor-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 500px;
+ padding: 10px;
+}
+.contenedor-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
+    width: 50%;
+    height: 500px;
+    padding: 10px;
+}
+  img{
+    overflow: hidden;
+    width: 70%;
+    height:auto ;
+}
+button {
+    position: relative;
+    padding: 15px 45px;
+    background: #fec195;
+    font-size: 17px;
+    font-weight: 500;
+    color: #181818;
+    cursor: pointer;
+    border: 1px solid #fec195;
+    border-radius: 8px;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.2));
+  }
+  
+  footer {
+    background-color: black;
+    color: rgb(146, 139, 139);
+    text-align: center;
+    padding: 20px;
+ 
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-icons {
+    font-size: 24px;
+    margin: 0 5px;
+    color: rgb(240, 82, 82);
+}
+
+.footer-nav a {
+    color: rgba(214, 212, 212, 0.603);
+    text-decoration: none;
+    margin: 0 15px;
+    transition: transform 0.3s ease-in-out;  
+}
+
+.footer-nav a:hover {
+    transform: translate(0, -3px) rotate(2deg);  
+}
+
+details {
+    margin-top: 10px;
+}
+
+details summary {
+    cursor: pointer;
+    outline: none;
+    color: rgb(133, 130, 130);  
+}
+
+details p {
+    margin: 0;
+    text-align: center;
+}
+  
+ 
+        
+@media (max-width: 900px) {
+ 
+.contenedor-inicio{
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 700px;
+    padding: 5px;
+
+ 
+ 
+}
+.contenedor-texto{
+    padding: 8px;
+    display: block;
+height: 300px;
+    width: 100%;
+  text-align: center;
+
+}
+.contedor-img{
+    padding: 8px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+}
+ 
+ #texto1 span{
+    color: #ca109c;
+    font-size: 3.5rem;
+ 
+}
+#texto1 {
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 4rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#love{
+ 
+    height: auto;
+}
+#slider-container {
+   
+    display: flex;
+ 
+    height: auto; 
+}
+#history{
+ 
+    height: 690px;
+}
+ #details{
+    height: auto;
+ }
+ 
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;  
+}
+#slider-controls {
+    top: 50%;   
+}
+#history-text h1{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+
+ }
+#history-text p{
+    font-size: 1rem;  
+}
+.second-content p{
+    font-size: 1.05rem;
+}
+details p {
+ 
+    text-align: left;
+}
+}
+

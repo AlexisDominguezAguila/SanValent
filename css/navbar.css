@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Pacifico', cursive;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+ 
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color:#000000;
+    box-shadow: 0px 4px 8px rgba(255, 254, 254, 0.1); 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    position: fixed; 
+    top: 0; 
+    z-index: 2;
+}
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px;  
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo h4 {
+    font-size: 18px;  
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin: 0;
+}
+.logo h4:hover{
+    color: #ca109c;
+}
+.bars {
+    display: none;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+ 
+.nav-bar ul li a {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 25px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+
+.nav-bar ul li a:hover {
+    width: 100%;
+    color: #ca109c;
+ 
+}
+
+       
+@media (max-width: 900px) {
+    header {
+        top: -1px;
+        padding: 0px 30px;
+    }
+
+    .bars {
+        z-index: 3;
+        color: #000;
+        display: block;
+        cursor: pointer;
+    }
+
+    .bars .line {
+        width: 40px;
+        height: 10px;
+        color: #000;
+        background-color: #000000;
+        margin: 6px 0px;
+        
+    }
+
+    .nav-bar {
+        height: 0px;
+        position: absolute;
+        top: -5px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: #000000;
+        box-shadow: 0px 4px 8px rgba(236, 234, 234, 0.1); 
+        transition: 0.5s;
+        overflow: hidden;
+        
+    }
+
+    .nav-bar.active {
+        height: 400px;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+
+    .nav-bar ul li a {
+        
+        margin-bottom: 20px;
+    }
+    
+.bars .line {
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 6px 0px;
+    transition: 0.2s;
+}
+
+.bars.cross .line:nth-child(1) {
+    transform:  rotate(-225deg) translate(6px, -6px);  
+}
+
+.bars.cross .line:nth-child(2) {
+    transform: rotate(225deg);
+} }

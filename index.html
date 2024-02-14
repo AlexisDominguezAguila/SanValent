@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amorflix Login</title>
+    <link rel="stylesheet" href="css/login.css">
+ 
+</head>
+<body>
+    <nav>
+        <a href="index.html"><img src="img/AmorFlix.png" alt="logo"></a>
+    </nav>
+    <div class="form-wrapper">
+        <h2>Iniciar Sesión</h2>
+        <form>
+            <div class="form-control">
+                <input type="text" id="username" required>
+                <label>Correo electrónico</label>
+            </div>
+            <div class="form-control">
+                <input type="password" id="password" required>
+                <label>Contraseña</label>
+            </div>
+
+            <button type="button" onclick="validateLogin()">Iniciar Sesión</button>
+            <div class="form-help">
+                <div class="remember-me">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Recuerdame</label>
+                </div>
+                <a href="#">30/11/2021</a>
+            </div>
+        </form>
+        <p>Eres y seras <a href="#">El amor de mi Vida</a></p>
+        <small>
+            "Sé que voy a quererte sin preguntas... Sé que vas a quererme si respuestas". <br>-Mario Benedetti-    
+        </small>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+
+
+</html>
